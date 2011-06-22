@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="Nuovo documento 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.2"
+     inkscape:cx="37.681064"
+     inkscape:cy="21.078929"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1004.3622)">
+    <path
+       sodipodi:type="star"
+       style="fill:#ffd42a;stroke:#ff0000"
+       id="path2989"
+       sodipodi:sides="5"
+       sodipodi:cx="18.571428"
+       sodipodi:cy="40.232143"
+       sodipodi:r1="10.810579"
+       sodipodi:r2="5.4052896"
+       sodipodi:arg1="-2.108383"
+       sodipodi:arg2="-1.4800644"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 13.035714,30.946429 6.025474,3.902658 6.630849,-2.751165 -1.849674,6.936555 4.665558,5.456156 -7.168636,0.384368 -3.747375,6.123254 -2.580787,-6.699001 -6.9815636,-1.671777 5.5736226,-4.524579 z"
+       transform="matrix(1.9827597,0,0,1.9101569,-12.953782,950.32987)"
+       inkscape:transform-center-x="0.60015753"
+       inkscape:transform-center-y="1.4139057" />
+    <text
+       xml:space="preserve"
+       style="font-size:30.97077560000000000px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Levenim MT;-inkscape-font-specification:Levenim MT"
+       x="0.9493441"
+       y="997.70386"
+       id="text2985"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96276433,1.0386758)"><tspan
+         sodipodi:role="line"
+         x="0.9493441"
+         y="997.70386"
+         id="tspan2991">m#</tspan></text>
+  </g>
+</svg>

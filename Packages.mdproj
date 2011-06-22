@@ -16,7 +16,7 @@
           </Builder>
         </Package>
         <Package name="Microsoft Windows binari">
-          <Builder targetFile="MediaSharp-windows.tar.gz" platform="Windows" configuration="Debug|x86" ctype="BinariesZipPackageBuilder">
+          <Builder targetFile="MediaSharp-windows.zip" platform="Windows" configuration="Release|x86" ctype="BinariesZipPackageBuilder">
             <ChildEntries>
               <SolutionItemReference path="MediaSharp\MediaSharp.csproj" />
             </ChildEntries>
