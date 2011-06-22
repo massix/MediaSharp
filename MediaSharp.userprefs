@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MediaSharp\MainWindow.cs">
+    <Files>
+      <File FileName="MediaSharp\Main.cs" Line="19" Column="1" />
+      <File FileName="MediaCalc\MediaCalc.cs" Line="52" Column="4" />
+      <File FileName="MediaCalc\MediaMark.cs" Line="18" Column="7" />
+      <File FileName="MediaSharp\MainWindow.cs" Line="221" Column="64" />
+      <File FileName="MediaSharp\XMLWorker.cs" Line="88" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True" selected="True">
+          <Node name="Solution Items" expanded="True" />
+          <Node name="MediaCalc" expanded="True" />
+          <Node name="MediaSharp" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
