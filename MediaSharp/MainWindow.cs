@@ -45,6 +45,8 @@ public partial class MainWindow: Gtk.Window
 	{
 		Build ();
 		
+		this.Icon = new Gdk.Pixbuf (System.IO.Path.Combine (System.AppDomain.CurrentDomain.BaseDirectory, "MediaSharp.ico"));
+		
 		if (outerArgs.Length > 0) {
 			FileName = outerArgs[0];
 			OpenFile ();
