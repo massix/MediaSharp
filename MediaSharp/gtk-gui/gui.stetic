@@ -67,7 +67,7 @@
         <child>
           <widget class="Gtk.MenuBar" id="menubar1">
             <property name="MemberName" />
-            <node name="__gtksharp_154_Stetic_Editor_ActionMenuBar" type="Menubar">
+            <node name="menubar1" type="Menubar">
               <node type="Menu" action="FileAction">
                 <node type="Menuitem" action="openAction" />
                 <node type="Menuitem" action="saveAction" />
@@ -87,7 +87,7 @@
           <widget class="Gtk.Toolbar" id="toolbar1">
             <property name="MemberName" />
             <property name="ShowArrow">False</property>
-            <node name="__gtksharp_144_Stetic_Editor_ActionToolbar" type="Toolbar">
+            <node name="toolbar1" type="Toolbar">
               <node type="Toolitem" action="addAction" />
               <node type="Toolitem" action="removeAction" />
             </node>

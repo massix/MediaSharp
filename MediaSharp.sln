@@ -10,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F1F0B7D-887E-42F6-B96C-C02EC5AA1BF3}"
 	ProjectSection(SolutionItems) = preProject
 		README.txt = README.txt
+		MediaSharp.ico = MediaSharp.ico
+		MediaSharp.png = MediaSharp.png
+		MediaSharp.svg = MediaSharp.svg
 	EndProjectSection
 EndProject
 Global
