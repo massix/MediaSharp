@@ -70,9 +70,13 @@ public partial class MainWindow: Gtk.Window
 		};
 		
 		ExamsTreeView.AppendColumn ("Exam name", Renderer, "text", (int) Columns.COLUMN_NAME);
-		
 		TreeViewColumn ColumnSet = ExamsTreeView.GetColumn((int) Columns.COLUMN_NAME);
 		ColumnSet.Expand = true;
+		ColumnSet.Clickable = true;
+		ColumnSet.Clicked += delegate(object sender, EventArgs e) {
+			SwitchSortingMethod((TreeViewColumn) sender, (int) Columns.COLUMN_NAME);
+		};
+		
 		
 		Renderer = new CellRendererText ()
 		{
@@ -96,7 +100,11 @@ public partial class MainWindow: Gtk.Window
 		};
 		
 		ExamsTreeView.AppendColumn ("CFU", Renderer, "text", (int) Columns.COLUMN_CFU);
-		
+		ColumnSet = ExamsTreeView.GetColumn((int) Columns.COLUMN_CFU);
+		ColumnSet.Clickable = true;
+		ColumnSet.Clicked += delegate(object sender, EventArgs e) {
+			SwitchSortingMethod((TreeViewColumn) sender, (int) Columns.COLUMN_CFU);
+		};
 		
 		Renderer = new CellRendererText ()
 		{
@@ -119,6 +127,60 @@ public partial class MainWindow: Gtk.Window
 			}
 		};
 		ExamsTreeView.AppendColumn ("Final Mark", Renderer, "text", (int) Columns.COLUMN_MARK);
+		ColumnSet = ExamsTreeView.GetColumn((int) Columns.COLUMN_MARK);
+		ColumnSet.Clickable = true;
+		ColumnSet.Clicked += delegate(object sender, EventArgs e) {
+			SwitchSortingMethod((TreeViewColumn) sender, (int) Columns.COLUMN_MARK);
+		};
+		
+		// Sorting functions
+		// by Mark
+		tModel.SetSortFunc((int) Columns.COLUMN_MARK, delegate(TreeModel model, TreeIter a, TreeIter b) {
+			int firstVal = (int) model.GetValue(a, (int) Columns.COLUMN_MARK);
+			int secondVal = (int) model.GetValue(b, (int) Columns.COLUMN_MARK);
+			
+			if (firstVal > secondVal)
+				return 1;
+			else if (secondVal > firstVal)
+				return -1;
+			else
+				return 0;
+		});
+		
+		// by CFU
+		tModel.SetSortFunc((int) Columns.COLUMN_CFU, delegate(TreeModel model, TreeIter a, TreeIter b) {
+			int firstVal = (int) model.GetValue(a, (int) Columns.COLUMN_CFU);
+			int secondVal = (int) model.GetValue(b, (int) Columns.COLUMN_CFU);
+			
+			if (firstVal > secondVal)
+				return 1;
+			else if (secondVal > firstVal)
+				return -1;
+			else
+				return 0;
+		});
+		
+		// by Name
+		tModel.SetSortFunc((int) Columns.COLUMN_NAME, delegate(TreeModel model, TreeIter a, TreeIter b) {
+			string firstVal = (string) model.GetValue (a, (int)Columns.COLUMN_NAME);
+			string secondVal = (string) model.GetValue (b, (int)Columns.COLUMN_NAME);
+
+			return String.Compare (firstVal, secondVal);
+		});
+	}
+	
+	private void SwitchSortingMethod(TreeViewColumn sender, int column_id) {
+		if (sender.SortOrder == SortType.Ascending)
+			sender.SortOrder = SortType.Descending;
+		else
+			sender.SortOrder = SortType.Ascending;
+		
+		tModel.SetSortColumnId(column_id, sender.SortOrder);
+		
+		foreach (TreeViewColumn t in ExamsTreeView.Columns)
+			t.SortIndicator = false;
+		
+		sender.SortIndicator = true;
 	}
 	
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
