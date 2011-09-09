@@ -215,6 +215,7 @@ public partial class MainWindow: Gtk.Window
 		CreditsEntry.Text = Calculator.CalculateTotalCredits ().ToString ();
 		MathAvgEntry.Text = Calculator.CalculateAverageMark ().ToString ();
 		WeightedAvgEntry.Text = Calculator.CalculateWeightedAverage ().ToString ();
+		FinalVoteEntry.Text = Calculator.CalculateDegreeStartingMark ().ToString ();
 	}
 	
 	protected virtual void SaveFileAction (object sender, System.EventArgs e)

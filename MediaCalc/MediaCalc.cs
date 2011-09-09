@@ -73,6 +73,10 @@ namespace MediaCalc
 			return (float) totalWeighted / (float) creditsSum;
 		}
 		
+		public float CalculateDegreeStartingMark() {
+			return (float) (CalculateWeightedAverage() * 110) / 30;
+		}
+		
 		private int CalculateTotalMarks() {
 			int ret = 0;
 			
